@@ -1,10 +1,13 @@
 package com.example.shoplist.domain
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.shoplist.domain.model.ShopItem
+import com.example.shoplist.domain.repository.ShopListRepository
 
-class GetShopListUseCase {
+class GetShopListUseCase(private val shopListRepository: ShopListRepository) {
 
-    fun getShopList() : List<ShopItem> {
-        TODO()
+    fun getShopList() : LiveData<List<ShopItem>> {
+        return  shopListRepository.getShopList()
     }
 }
