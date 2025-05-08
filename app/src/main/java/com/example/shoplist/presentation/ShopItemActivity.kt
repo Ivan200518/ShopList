@@ -13,6 +13,8 @@ class ShopItemActivity : AppCompatActivity() {
         setContentView(R.layout.activity_shop_item)
         val mode = intent.getStringExtra(EXTRA_SCREEN_MODE)
         Log.d("MyLog", mode.toString())
+
+
     }
 
     companion object {
