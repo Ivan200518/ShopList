@@ -15,6 +15,8 @@ class ShopItemActivity : AppCompatActivity() {
         Log.d("MyLog", mode.toString())
 
 
+
+
     }
 
     companion object {
