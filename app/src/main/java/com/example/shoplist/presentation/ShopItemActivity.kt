@@ -14,10 +14,10 @@ class ShopItemActivity : AppCompatActivity() {
         val mode = intent.getStringExtra(EXTRA_SCREEN_MODE)
         Log.d("MyLog", mode.toString())
 
-
-
-
     }
+
+
+
 
     companion object {
         private const val EXTRA_SCREEN_MODE = "extra_mode"
@@ -30,7 +30,7 @@ class ShopItemActivity : AppCompatActivity() {
             intent.putExtra(EXTRA_SCREEN_MODE, ADD_MODE)
             return intent
         }
-
+        
         fun newIntentEditItem(context: Context, shopItemId: Int): Intent {
             val intent = Intent(context, ShopItemActivity::class.java)
             intent.putExtra(EXTRA_SCREEN_MODE, EDIT_MODE)
