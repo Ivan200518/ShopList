@@ -15,6 +15,9 @@ class ShopListAdapter :
 
 
 
+
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShopListViewHolder {
         val layout = when (viewType) {
             ITEM_ENABLED -> R.layout.item_shop_enabled
